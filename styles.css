@@ -1,0 +1,23 @@
+@media print {
+    body * 
+    {
+        visibility: hidden; /* Sembunyikan semua elemen */
+    }
+    .table-responsive, .table-responsive * 
+    {
+        visibility: visible; /* Tampilkan hanya tabel */
+    }
+    .sidebar, .btn {
+        display: none;
+    }
+    .table-responsive {
+        overflow: visible !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .btn, .pagination, .sidebar {
+        display: none; /* Sembunyikan tombol, pagination, dan sidebar saat mencetak */
+    }
+}
